@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveBookDetails } from "../../utility/localstorage";
 
 const BookDetails = () => {
     const books = useLoaderData()
@@ -10,11 +11,30 @@ const BookDetails = () => {
     console.log(book)
 
     const handleReadButton = () =>{
-        toast('Added to read successfully!')
+        saveBookDetails(idInt)
+        
+        // if(!saveBookDetails(id)){
+            
+            toast('Added to read successfully!')
+        // }
+        // else{
+        //     toast('You have already added this one.')
+            
+
+        // }
     }
 
     const handleWishlist = () =>{
-        toast('Added to wishlist successfully!')
+        saveBookDetails(idInt)
+        // if(!saveBookDetails(id)){
+        //     toast('Added to wishlist successfully!')
+        // }
+        // else{
+            
+            toast('Already added to wishlist!')
+
+        // }
+        
     }
     return (
         <div>
