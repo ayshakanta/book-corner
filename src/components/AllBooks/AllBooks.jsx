@@ -1,9 +1,25 @@
+import { useEffect, useState } from "react";
+import Book from "../Book/Book";
 
 
 const AllBooks = () => {
+
+    const [books, setBooks] = useState([])
+
+    useEffect(() =>{
+        fetch('books.json')
+        .then(res => res.json())
+        .then(data => setBooks(data))
+    }, [])
     return (
-        <div>
-            <h2>All books</h2>
+        <div className="my-10">
+            <h2 className="text-center">Books</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {
+                    books.map(book => <Book key={book.id} book = {book}></Book> )
+                }
+            </div>
             
         </div>
     );

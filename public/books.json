@@ -1,8 +1,9 @@
 [
     {
       "id": 1,
+      "title": "Harry Potter and the Order of the Phoenix",
       "author": "J.K. Rowling",
-      "hashtag": "#WizardingWorld",
+      "hashtags": ["#WizardingWorld", "#Magic", "#Adventure"],
       "publish_date": "2005-07-16",
       "publisher": "Bloomsbury Publishing",
       "pages": 768,
@@ -13,8 +14,9 @@
     },
     {
       "id": 2,
+      "title": "1984",
       "author": "George Orwell",
-      "hashtag": "#Dystopia",
+      "hashtags": ["#Dystopia", "#Surveillance", "#Totalitarianism"],
       "publish_date": "1949-06-08",
       "publisher": "Secker & Warburg",
       "pages": 328,
@@ -25,8 +27,9 @@
     },
     {
       "id": 3,
+      "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
-      "hashtag": "#Classic",
+      "hashtags": ["#Classic", "#Racism", "#Morality"],
       "publish_date": "1960-07-11",
       "publisher": "J. B. Lippincott & Co.",
       "pages": 336,
@@ -37,8 +40,9 @@
     },
     {
       "id": 4,
+      "title": "A Brief History of Time",
       "author": "Stephen Hawking",
-      "hashtag": "#Science",
+      "hashtags": ["#Science", "#Physics", "#Cosmology"],
       "publish_date": "1988-04-15",
       "publisher": "Bantam Books",
       "pages": 256,
@@ -49,8 +53,9 @@
     },
     {
       "id": 5,
+      "title": "Murder on the Orient Express",
       "author": "Agatha Christie",
-      "hashtag": "#Mystery",
+      "hashtags": ["#Mystery", "#Detective", "#Whodunit"],
       "publish_date": "1926-01-21",
       "publisher": "William Collins, Sons",
       "pages": 296,
@@ -61,8 +66,9 @@
     },
     {
       "id": 6,
+      "title": "The Fellowship of the Ring",
       "author": "J.R.R. Tolkien",
-      "hashtag": "#MiddleEarth",
+      "hashtags": ["#MiddleEarth", "#EpicFantasy", "#Adventure"],
       "publish_date": "1954-07-29",
       "publisher": "Allen & Unwin",
       "pages": 1178,
