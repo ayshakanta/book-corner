@@ -70,17 +70,17 @@ const ListedBooks = () => {
             </div>
             <ul>
                 {
-                    displayBooks.map(book => <li className="flex gap-10 border-2 rounded-2xl items-center mb-6 drop-shadow-sm" key={book.id}>
+                    displayBooks.map(book => <li className="lg:flex gap-10 border-2 rounded-2xl items-center mb-6 drop-shadow-sm" key={book.id}>
                         <div className="bg-[#1313130D] rounded-2xl m-6 flex justify-center items-center text-center p-10 drop-shadow-md">
                             <img className=" w-36 drop-shadow-lg" src={book.image} alt="" />
                         </div>
-                        <div className="space-y-6">
+                        <div className="space-y-6 p-3">
                             <h2 className="font-bold text-2xl">{book.title}</h2>
                             <h4 className="font-semibold">By: {book.author}</h4>
-                            <div className="flex gap-3">
+                            <div className="lg:flex gap-3">
                                 <p className=""><span className="font-bold mr-3">Tag</span>
                                     {
-                                        book.hashtags.map((tag, idx) => <span className="mr-2 text-[#23BE0A] bg-[#23BE0A0D] px-3 py-2 rounded-2xl" key={idx}>#{tag}</span>)
+                                        book.hashtags.map((tag, idx) => <span className="mr-1 lg:mr-2 text-[#23BE0A] bg-[#23BE0A0D] px-2 py-1 rounded-2xl" key={idx}>#{tag}</span>)
                                     }
                                 </p>
                                 <div className="flex gap-1 items-center">
@@ -90,7 +90,7 @@ const ListedBooks = () => {
 
                             </div>
                             <div className="space-y-5">
-                                <div className="flex gap-6">
+                                <div className="lg:flex gap-6">
                                     <div className="flex gap-1 items-center">
                                         <div><GoPeople /></div>
                                         <p>Publisher: {book.publisher}</p>
@@ -102,7 +102,7 @@ const ListedBooks = () => {
                                     </div>
                                 </div>
                                 <hr />
-                                <div className="flex gap-4">
+                                <div className="lg:flex space-y-2 gap-4">
                                     <p className="text-[#328EFF] bg-[#328EFF26] px-3 py-2 rounded-3xl">Category: {book.category}</p>
                                     <p className="text-[#FFAC33] bg-[#FFAC3326] px-3 py-2 rounded-3xl">Rating: {book.rating}</p>
                                     <button className="px-3 py-2 rounded-3xl text-white bg-[#23BE0A]" onClick={handleShowDetails}>View Details</button>
