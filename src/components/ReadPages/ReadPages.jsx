@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 // import { useActionData } from 'react-router-dom';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { ResponsiveContainer } from 'recharts';
@@ -94,5 +94,13 @@ const ReadPages = () => {
 
     );
 };
+
+ReadPages.propTypes ={
+    fill: PropTypes.number,
+    x: PropTypes.number,
+    y: PropTypes.number,
+    width: PropTypes.number,
+    height:PropTypes.number
+}
 
 export default ReadPages;
