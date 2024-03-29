@@ -42,7 +42,7 @@ const ListedBooks = () => {
         const storedBooksId = getStoredBookDetails();
         if (books.length > 0) {
             const bookList = books.filter(book => storedBooksId.includes(book.id))
-            console.log(bookList)
+            // console.log(bookList)
 
             setListedBooks(bookList)
             setDisplayBooks(bookList)
@@ -102,7 +102,7 @@ const ListedBooks = () => {
                                     </div>
                                 </div>
                                 <hr />
-                                <div className="lg:flex space-y-2 gap-4">
+                                <div className="lg:flex items-center text-center  space-y-2 gap-4">
                                     <p className="text-[#328EFF] bg-[#328EFF26] px-3 py-2 rounded-3xl">Category: {book.category}</p>
                                     <p className="text-[#FFAC33] bg-[#FFAC3326] px-3 py-2 rounded-3xl">Rating: {book.rating}</p>
                                     <button className="px-3 py-2 rounded-3xl text-white bg-[#23BE0A]" onClick={handleShowDetails}>View Details</button>
